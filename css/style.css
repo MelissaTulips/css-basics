@@ -1,0 +1,108 @@
+/* * {
+    margin: 0
+} */
+
+/* selectots */
+/* #id, .class un type */
+
+#main_heading {
+    color:gold
+}
+/*reatings: (1,0,0)=>100 total rating */
+
+
+
+.bold_paragraph {
+    font-weight: bold;
+    line-height: 3rem;;
+}
+/* (0,1,0)=>10 total rating */
+
+p{
+    /* neizmantot important!!! */
+    /* line-height: 1rem !important; */
+    line-height: 1rem;
+}
+/* (0,0,1)=>1 total rating*/
+
+
+
+
+/* attribute selector */
+
+a[target]{
+    color:blue;
+}
+
+
+
+div .bold_paragraph{
+    font-weight: normal;
+}
+/* rating (0,1,1)=>11 */
+
+
+
+div .sample_class {
+    color: green;
+
+}
+/* 11 */
+
+div.sample_class {
+
+    color: red;
+
+}
+/* 10 */
+
+
+/* direct child */
+div.sample_class > div.p_container .sample_class{
+    color: blue;
+}
+
+
+/* psuedo class selector*/
+
+div.sample_class h2:first-child{
+    font-size: 10rem;
+}
+
+
+/*
+:first-child
+:first-of-type 
+:nth-child
+*/
+
+
+
+div.list ul li:nth-child(even){
+    color: aquamarine;
+}
+
+
+div.list ul li:nth-child(odd){
+    color: cadetblue;
+}
+
+
+/* psudo element selector */
+
+/* makes all small letter in beginning of a p sentence a big letter */
+p::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+
+div.box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(236, 26, 114, 0.5);
+    /* background-color: rgb(236, 26, 114);
+    background-color: #ed1a72; */
+    /* HSL - hue, saturation, lightness | HSV - hue, saturation, value */
+}
